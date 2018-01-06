@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.microsoft.projectoxford.emotionsample.MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="91dp"
+            android:src="@drawable/strawberry"
+            android:id="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:src="@drawable/empty"
+            android:id="@+id/empty" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="IMPORT"
+            android:id="@+id/importing"
+            style="@style/ButtonStyle"
+            android:layout_weight="0.04"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:onClick="importSongs"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/empty"
+            android:id="@+id/empty2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="LISTEN"
+            android:id="@+id/listen"
+            style="@style/ButtonStyle2"
+            android:layout_weight="0.04"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:onClick="activityRecognize"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/empty"
+            android:id="@+id/empty3" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="MODIFY"
+            android:id="@+id/modify"
+            style="@style/ButtonStyle"
+            android:layout_weight="0.04"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/empty"
+            android:id="@+id/empty4" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SET ALARM / RINGTONE"
+            android:id="@+id/setalarm"
+            style="@style/ButtonStyle2"
+            android:layout_weight="0.04"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

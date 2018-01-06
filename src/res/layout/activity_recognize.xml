@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.microsoft.projectoxford.emotionsample.RecognizeActivity"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp">
+
+        <ImageView
+            android:layout_width="84dp"
+            android:layout_height="86dp"
+            android:src="@drawable/strawberry"
+            android:id="@+id/imageView" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/empty"
+            android:id="@+id/empty3" />
+
+        <ImageView
+            android:id="@+id/selectedImage"
+            android:layout_width="172dp"
+            android:layout_height="186dp"
+            android:background="#80FF00"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="Give us a pic!"
+            android:id="@+id/textView"
+            android:layout_weight="0.10" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.05">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:text="Select Image"
+                android:id="@+id/buttonSelectImage"
+                android:onClick="selectImage"
+                style="@style/ButtonStyle3"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/empty"
+            android:id="@+id/empty" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.05">
+
+                <Button
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:text="I> / II"
+                    android:id="@+id/buttonplay"
+                    android:onClick="playPause"
+                    style="@style/ButtonStyle3"
+                    android:layout_weight="1"
+                    android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:src="@drawable/empty"
+                android:id="@+id/empty2" />
+
+                <Button
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:text=">>>"
+                    android:id="@+id/buttonnew"
+                    android:onClick="nextSong"
+                    style="@style/ButtonStyle3"
+                    android:layout_weight="1"
+                    android:textSize="25sp"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
